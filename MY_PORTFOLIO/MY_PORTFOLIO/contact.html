@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="menu-btn open-btn">
+        <i class='bx bx-menu'></i>
+    </div>
+    <div class="sidebar">
+        <div class="menu-btn close-btn">
+            <i class='bx bx-x'></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html">Intro</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="certificate.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="contactform">
+                <h1>Contact me for Work/General Enquiries</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="clientname" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="clientname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientemail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="clientemail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientphone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="clientphone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientenquiries" class="form-label">Enquiries</label>
+                        <input type="text" class="form-control" id="clientenquiries">
+                    </div>
+                    <div class="mb-3" id="form-check">
+                        <input type="checkbox" class="form-check-input" id="isclient">
+                        <label class="form-check-label" for="isclient">I want to work on a project with You</label>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
