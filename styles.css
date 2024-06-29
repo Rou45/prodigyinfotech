@@ -1,0 +1,236 @@
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+}
+
+/* Navbar styling */
+#navbar {
+  background: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+#navbar ul li {
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#navbar ul li a:hover {
+  color: #ff6347;
+  text-decoration: underline;
+}
+
+/* Hero section styling */
+.hero {
+  background: #333 url('hero.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  margin-top: 60px; /* Adjusted for fixed navbar */
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background: #ff6347;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.hero .btn:hover {
+  background: #ff4500;
+}
+
+/* About section styling */
+.about {
+  background: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+}
+
+/* Services section styling */
+.services {
+  background: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.services .service-item {
+  margin-bottom: 30px;
+}
+
+.services .service-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.services .service-item p {
+  font-size: 18px;
+}
+
+.services .service-item ul {
+  margin-top: 10px;
+  text-align: left;
+  display: inline-block;
+}
+
+.services .service-item ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Testimonials section styling */
+.testimonials {
+  background: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.testimonials .testimonial-item {
+  margin-bottom: 30px;
+}
+
+.testimonials .testimonial-item p {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Contact section styling */
+.contact {
+  background: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact form button {
+  background: #ff6347;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background: #ff4500;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+  }
+  
+  #navbar ul li {
+    margin: 10px 0;
+  }
+  
+  .hero {
+    padding: 70px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+  }
+  
+  .services .service-item {
+    margin-bottom: 20px;
+  }
+  
+  .testimonials .testimonial-item {
+    margin-bottom: 20px;
+  }
+}
